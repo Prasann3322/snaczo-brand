@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snaczo</title>
+        <link rel="icon" href="./ASSETS/real-logo-title.png" type="image/png">
+    <link rel="stylesheet" href="style.css" />
+    <!-- Links of the fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Michroma&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="hero-section">
+    
+      <div class="nav">
+        <a href="#Our-product" class="nav-link">Product</a>
+        <a href="#Contact-us" class="nav-link">Distributorship</a>
+        <img
+          src="./ASSETS/real-logo.png"
+          alt="Snaczo company logo"
+          class="logo"
+        />
+          <a href="#Contact-us" class="phone-link"><span class="nav-phone">Get Distributorship</sapn></a>
+        <a href="#About-us" class="nav-link">About Us</a>
+        <a href="#Contact-us" class="nav-link">Contant Us</a>
+      </div>
+
+      <div class="moment-wrapper">
+        <div class="moment">
+          <p class="right-moment">
+            IT'S BAKED NOT FRIED IT'S BAKED NOT FRIED IT'S BAKED NOT FRIEDIT'S
+            BAKED NOT FRIED IT'S BAKED NOT FRIED IT'S BAKED NOT FRIED
+          </p>
+          <p class="left-moment">
+            IT'S BAKED NOT FRIED IT'S BAKED NOT FRIED IT'S BAKED NOT FRIEDIT'S
+            BAKED NOT FRIED IT'S BAKED NOT FRIED IT'S BAKED NOT FRIED
+          </p>
+          <p class="right-moment">
+            IT'S BAKED NOT FRIED IT'S BAKED NOT FRIED IT'S BAKED NOT FRIEDIT'S
+            BAKED NOT FRIED IT'S BAKED NOT FRIED IT'S BAKED NOT FRIED
+          </p>
+          <p class="left-moment">
+            IT'S BAKED NOT FRIED IT'S BAKED NOT FRIED IT'S BAKED NOT FRIEDIT'S
+            BAKED NOT FRIED IT'S BAKED NOT FRIED IT'S BAKED NOT FRIED
+          </p>
+          <p class="right-moment text">
+            IT'S BAKED NOT FRIED IT'S BAKED NOT FRIED IT'S BAKED NOT FRIEDIT'S
+            BAKED NOT FRIED IT'S BAKED NOT FRIED IT'S BAKED NOT FRIED
+          </p>
+          <p class="left-moment" id="extra-line">
+            IT'S BAKED NOT FRIED IT'S BAKED NOT FRIED IT'S BAKED NOT FRIEDIT'S
+            BAKED NOT FRIED IT'S BAKED NOT FRIED IT'S BAKED NOT FRIED
+          </p>
+        </div>
+      </div>
+
+      <img
+        src="./ASSETS/chilli.png"
+        alt="a chilli flavoured snaczo packet"
+        class="hero-packet"
+      />
+      <div class="cartoon-wrapper">
+        <img
+          src="./ASSETS/character.png"
+          alt="a chilli flavoured snaczo packet"
+          class="cartoon"
+        />
+        <div class="eye">
+          <div class="eyelid"></div>
+        </div>
+        <div class="eye2">
+          <div class="eyelid"></div>
+        </div>
+      </div>
+      <div class="puff-wrapper" id="puff">
+        <script>
+          const puff = document.getElementById("puff");
+          puff.addEventListener("animationend", () => {
+            puff.classList.add("oscillating");
+          });
+        </script>
+
+        <img src="./ASSETS/puff.png" alt="3" class="puff1 puff" />
+        <img src="./ASSETS/puff.png" alt="4" class="puff2 puff" />
+        <img src="./ASSETS/puff.png" alt="6" class="puff3 puff" />
+        <img src="./ASSETS/puff.png" alt="7" class="puff4 puff" />
+        <img src="./ASSETS/puff.png" alt="15" class="puff5 puff" />
+      </div>
+      <div class="puff-wrapper2" id="puff2">
+        <img src="./ASSETS/puff.png" alt="9" class="puff6 puff" />
+        <img src="./ASSETS/puff.png" alt="8" class="puff7 puff" />
+        <img src="./ASSETS/puff.png" alt="10" class="puff8 puff" />
+        <img src="./ASSETS/puff.png" alt="11" class="puff9 puff" />
+        <img src="./ASSETS/puff.png" alt="12" class="puff10 puff" />
+        <!-- <img src="./ASSETS/puff.png" alt="13" class="puff11 puff">
+            <img src="./ASSETS/puff.png" alt="14" class="puff12 puff"> -->
+        <script>
+          const puff2 = document.getElementById("puff2");
+          puff2.addEventListener("animationend", () => {
+            puff2.classList.add("oscillating");
+          });
+        </script>
+      </div>
+    </section>
+    <!-- New section start from here  -->
+
+    <section class="scroll-connector">
+      <h2 class="scroll-text">
+        Explore the Blast Of Flavours | Explore the Blast Of Flavours | Explore
+        the Blast Of Flavours | Explore the Blast Of Flavours | Explore the
+        Blast Of Flavours |
+      </h2>
+    </section>
+    <script>
+      const scrollText = document.querySelector(".scroll-text");
+
+      window.addEventListener("scroll", () => {
+        const scrollY = window.scrollY;
+        // Adjust factor to control speed
+        const offsetX = scrollY * 0.5;
+        scrollText.style.transform = `translateX(${offsetX}px) scaleY(2)`;
+      });
+    </script>
+    <div class="hero-2">
+      <div class="snack-grid">
+        <img src="./ASSETS/ring.png" alt="Rings" class="snack-item rings" />
+        <img src="./ASSETS/chilli.png" alt="Puffs" class="snack-item puffs" />
+        <img src="./ASSETS/curl.png" alt="Curls" class="snack-item curls" />
+      </div>
+      <div class="overlap-grid">
+        <img
+          src="./ASSETS/bg-puff.png"
+          alt="background image with chilli and puffs"
+          class="bg-puff"
+        />
+        <img
+          src="./ASSETS/bg-curl.png"
+          alt="background image with cheese and curls"
+          class="bg-curl"
+        />
+        <img
+          src="./ASSETS/bg-ring.png"
+          alt="background image with rings and tomatos"
+          class="bg-ring"
+        />
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const bgPuff = document.querySelector(".bg-puff");
+          const bgCurl = document.querySelector(".bg-curl");
+          const bgRing = document.querySelector(".bg-ring");
+
+          const ring = document.querySelector(".rings");
+          const puff = document.querySelector(".puffs");
+          const curl = document.querySelector(".curls");
+
+          ring.addEventListener("mouseenter", () => {
+            bgRing.style.display = "block";
+            bgPuff.style.display = "none";
+            bgCurl.style.display = "none";
+          });
+
+          puff.addEventListener("mouseenter", () => {
+            bgPuff.style.display = "block";
+            bgRing.style.display = "none";
+            bgCurl.style.display = "none";
+          });
+
+          curl.addEventListener("mouseenter", () => {
+            bgCurl.style.display = "block";
+            bgPuff.style.display = "none";
+            bgRing.style.display = "none";
+          });
+
+          const snackGrid = document.querySelector(".snack-grid");
+          snackGrid.addEventListener("mouseleave", () => {
+            bgPuff.style.display = "block";
+            bgCurl.style.display = "none";
+            bgRing.style.display = "none";
+          });
+        });
+      </script>
+
+      <h2 class="club-text">
+        <span class="first-word">Experience</span> Flavour
+      </h2>
+    </div>
+
+    <!-- the third page start here -->
+    <section class="scroll-connector2" id="Our-product">
+      <h2 class="scroll-text2">
+        Our Products | Our Products | Our Products | Our Products | Our Products
+        | Our Products | Our Products | Our Products | Our Products | Our
+        Products | Our Products | Our Products | Our Products |
+      </h2>
+    </section>
+    <script>
+      const scrollText2 = document.querySelector(".scroll-text2");
+
+      window.addEventListener("scroll", () => {
+        const scrollY = window.scrollY;
+        const offsetX = scrollY * 0.5;
+        scrollText2.style.transform = `translateX(-${offsetX}px) scaleY(2)`;
+      });
+    </script>
+
+    <!-- Specific segment only for mobile the product slide -->
+     <section class="mobile-product">
+      <div class="product-slider">
+    <button class="nav-product prev">‹</button>
+    <div class="slider-container">
+      <div class="slider-track" id="slider-track">
+        <!-- CLONED LAST SLIDE (for infinite loop) -->
+        <div class="slide" style="background: #;"></div>
+
+        <!-- REAL SLIDES -->
+        <div class="slide" style="background: #;">
+          <div class="packet-slide">
+            <img src="./ASSETS/chilli.png" alt="Packet of chilli flavoured puff snaczo snack" class="chilli-slide-image">
+            <h2 class="puff-text">
+            Ignite your senses<br />
+            with Snaczo Chilli!
+          </h2>
+          </div>
+
+
+
+        </div>
+        <div class="slide" style="background: #;">
+            <div class="packet-slide">
+            <img src="./ASSETS/ring.png" alt="Packet of chilli flavoured puff snaczo snack" class="chilli-slide-image">
+            <h2 class="puff-text">
+            Snaczo Ring brings <br />
+            tangy twist to life!
+          </h2>
+          </div>
+
+
+        </div>
+        <div class="slide" style="background: #;">
+            <div class="packet-slide">
+            <img src="./ASSETS/curl.png" alt="Packet of chilli flavoured puff snaczo snack" class="chilli-slide-image">
+            <h2 class="puff-text">
+            Snaczo curl wraps<br />
+            You in a cheesy hug!
+          </h2>
+          </div>
+
+
+        </div>
+        
+
+        <!-- CLONED FIRST SLIDE (for infinite loop) -->
+        <div class="slide" style="background: #;"></div>
+      </div>
+    </div>
+    <button class="nav-product next">›</button>
+  </div>
+</section>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const track = document.getElementById("slider-track");
+      const slides = track.querySelectorAll(".slide");
+      const prevBtn = document.querySelector(".prev");
+      const nextBtn = document.querySelector(".next");
+
+      let currentIndex = 1; // because first is clone of last
+      const slideCount = slides.length - 2; // real slides only
+      let slideWidth = 0;
+
+      function updateSlideWidth() {
+        slideWidth = slides[0].offsetWidth + 20;
+        track.style.transform = `translateX(-${slideWidth * currentIndex}px)`;
+      }
+
+      function moveTo(index) {
+        track.style.transition = "transform 0.5s ease-in-out";
+        track.style.transform = `translateX(-${slideWidth * index}px)`;
+        currentIndex = index;
+      }
+
+      track.addEventListener("transitionend", () => {
+        if (currentIndex === 0) {
+          track.style.transition = "none";
+          currentIndex = slideCount;
+          track.style.transform = `translateX(-${slideWidth * currentIndex}px)`;
+        } else if (currentIndex === slideCount + 1) {
+          track.style.transition = "none";
+          currentIndex = 1;
+          track.style.transform = `translateX(-${slideWidth * currentIndex}px)`;
+        }
+      });
+
+      nextBtn.addEventListener("click", () => {
+        if (currentIndex <= slideCount) {
+          moveTo(currentIndex + 1);
+        }
+      });
+
+      prevBtn.addEventListener("click", () => {
+        if (currentIndex >= 1) {
+          moveTo(currentIndex - 1);
+        }
+      });
+
+      window.addEventListener("resize", updateSlideWidth);
+
+      setTimeout(() => {
+        updateSlideWidth();
+      }, 100);
+    });
+  </script>
+
+
+
+
+
+<!-- there the slide product segment ends -->
+
+
+
+
+
+
+
+    <div class="hero-3" id="our-product">
+      
+      <div class="grid-container">
+        <div class="left-column">
+          <img src="./ASSETS/chilli.png" alt="" class="single-puff" />
+        </div>
+        <div class="top-right">
+          <h2 class="puff-text">
+            Ignite your senses<br />
+            with Snaczo Chilli!
+          </h2>
+        </div>
+        <div class="bottom-right-1">
+          <img
+            src="./ASSETS/msg.png"
+            alt="border of a message container"
+            class="msg"
+          />
+          <h2 class="puff-sub-text">
+            Snaczo Chilli brings real<br />
+            spice and serious crunch <br />— baked, not fried.
+          </h2>
+        </div>
+        <div class="bottom-right-2">
+          <img
+            src="./ASSETS/character.png"
+            alt="image of the corn cartoon character"
+            class="puff-character"
+          />
+        </div>
+      </div>
+    </div>
+    <hr class="line" />
+    <div class="hero-4">
+      <section class="flipped-hero-layout">
+  <div class="flipped-grid-layout">
+    <div class="grid-top-left">
+      <h2 class="curl-text">Snaczo Curl wraps  <br> you in a cheesy hug</h2>
+    </div>
+    <div class="grid-bottom-left">
+      <img src="./ASSETS/character.png" alt="" class="curl-cartoon">
+    </div>
+    <div class="grid-bottom-middle">
+      <img src="./ASSETS/msg.png" alt="" class="msg-curl">
+      <h2 class="curl-sub-text">These twisted curls burst with bold<br> cheesy goodness in every crunchy bite<br> — baked, not fried</h2>
+    </div>
+    <div class="grid-right-large">
+      <img src="./ASSETS/curl.png" alt="" class="single-curl">
+    </div>
+  </div>
+</section>
+<hr class="line-curl" />
+    </div>
+    <div class="hero-5">
+      <div class="grid-container-ring">
+        <div class="left-column">
+          <img src="./ASSETS/ring.png" alt="" class="single-puff" />
+        </div>
+        <div class="top-right">
+          <h2 class="puff-text">
+            Snaczo Ring brings <br />
+            tangy twist to life!
+          </h2>
+        </div>
+        <div class="bottom-right-1">
+          <img
+            src="./ASSETS/msg.png"
+            alt="border of a message container"
+            class="msg"
+          />
+          <h2 class="puff-sub-text">
+            Snaczo Ring brings tangy <br>zing and crispy delight<br> — baked, not fried.
+          </h2>
+        </div>
+        <div class="bottom-right-2">
+          <img
+            src="./ASSETS/character.png"
+            alt="image of the corn cartoon character"
+            class="puff-character"
+          />
+        </div>
+      </div>
+      
+    </div>
+    <div class="about-us">
+      <section class="scroll-connector3" id="About-us">
+      <h2 class="scroll-text3">
+        About Us | About Us | About Us | About Us | About Us | About Us | About Us | About Us | About Us | About Us | About Us | About Us | About Us | About Us | About Us | About Us | About Us | About Us | About Us | About Us | About Us | About Us | About Us | About Us | About Us | About Us | 
+      </h2>
+      
+    </section>
+    <script>
+  const scrollText3 = document.querySelector(".scroll-text3");
+
+  window.addEventListener("scroll", () => {
+    const scrollY = window.scrollY;
+    const offsetX = scrollY * 0.5;
+    scrollText3.style.transform = `translateX(${offsetX}px) scaleY(2)`;
+  });
+</script>
+
+    </div>
+    <div class="about-us-content">
+      
+      <div class="container-about">
+  <div class="top-row-about">
+
+    
+  <!-- Other grid items -->
+  <div class="grid-item fade-in-on-scroll">
+    <h1 class="about-topic">What Is Snaczo?</h1>
+    <h2 class="about-snaczo">At Snaczo, we craft deliciously crunchy corn puffs using fine ingredients and a proprietary process. We offer classic and innovative flavors, ensuring quality, safety, and customer satisfaction in every bite. Each puff is made with care, combining the goodness of premium corn with bold seasonings that excite the taste buds. Our commitment goes beyond taste—we follow stringent hygiene standards, sustainable practices, and continuous innovation to deliver snacks that are not only enjoyable but also trustworthy. Whether you're craving a nostalgic favorite or exploring something new, Snaczo promises a snack-time experience that’s flavorful, fun, and fulfilling for all ages.</h2>
+  </div>
+</section>
+
+
+
+
+  </div>
+  <div class="bottom-row-about">
+    <div class="left-box-about">
+      <p class="owner">Ayush Gupta<p>
+    </div>
+    <div class="right-box-about">
+      <p class="owner">Krish Gupta</p>
+    </div>
+  </div>
+</div>
+
+    </div>
+<!-- /* Contact Us Segment Starts from Here*/ -->
+ <section class="scroll-connector4 contact-us" id="Contact-us">
+      <h2 class="scroll-text4">
+        Contact Us | Contact Us | Contact Us | Contact Us | Contact Us | Contact Us | Contact Us | Contact Us | Contact Us | Contact Us | Contact Us | Contact Us | Contact Us | Contact Us | Contact Us | Contact Us | Contact Us | Contact Us | Contact Us | Contact Us | Contact Us | Contact Us | Contact Us | Contact Us | Contact Us | Contact Us | Contact Us | Contact Us | Contact Us | Contact Us | 
+      </h2>
+    </section>
+    <script>
+      const scrollText4 = document.querySelector(".scroll-text4");
+
+      window.addEventListener("scroll", () => {
+        const scrollY = window.scrollY;
+        const offsetX = scrollY * 0.5;
+        scrollText4.style.transform = `translateX(-${offsetX}px) scaleY(2)`;
+      });
+    </script>
+<div class="contact-content">
+  <section class="contact-grid">
+  <div class="left-box-contact">
+    <img src="./ASSETS/real-logo.png" class="logo-end" alt="the image of the logo" >
+    <div class="flex-row-link">
+    <a href="mailto:snaczofoods@gmail.com" class="mail-link">
+      <div class="contact-link-flex">
+      <ion-icon name="mail-open-outline" class="mail-icon icon"></ion-icon>
+      <p> info@snaczofoods.in</p>
+      </div>
+    </a>
+  <a href="https://instagram.com/snaczo_foods" class="mail-link">
+      <div class="contact-link-flex">
+      <ion-icon name="logo-instagram" class="icon"></ion-icon>
+      <p> @snaczo_foods</p>
+      </div>
+    </a>
+    <a href="#" class="mail-link">
+      <div class="contact-link-flex">
+      <ion-icon name="call-outline" class="icon"></ion-icon>
+      <p> +91 7991326898, +91 9125637149</p>
+      </div>
+    </a>
+    <a href="https://maps.app.goo.gl/PcwH31ibMNHyvGc76" class="mail-link">
+      <div class="contact-link-flex">
+      <ion-icon name="location-outline" class="icon location"></ion-icon>
+      <p> 270, Gadan Chak Chauraha, Nagraur, Bahraich, Uttar Pradesh</p>
+      </div>
+    </a>
+    </div>
+    
+    <div class="developer-segment-mobile">
+<hr class="last-line">
+<p>Designed and Developed By <a href="https://www.linkedin.com/in/prasann-soni-b3a9682a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Prasann Soni</a></p>
+
+</div>
+  </div>
+
+<div class="bg-truck">
+      <marquee direction="right"><img src="./ASSETS/bg-truck.png" alt="" class="truck"><img src="./ASSETS/bg-truck.png" alt="" class="truck"><img src="./ASSETS/bg-truck.png" alt="" class="truck"><img src="./ASSETS/bg-truck.png" alt="" class="truck">
+      </marquee>
+    </div>
+
+  <div class="right-box-contact">
+    
+     <h1 class="contact-head Distributorship">
+      Get Distributorship Now
+      At <span class="zero">Zero</span> Security
+      Amount!!
+    </h1>
+    <a href="form.html" class="form">
+      <button class="button-get" type="submit"><span id="get">Get Now</span></button>
+    </a>
+   
+    </div>
+  </div>
+
+  </div>
+
+<div class="developer-segment">
+
+<p>Designed and Developed By <a href="https://www.linkedin.com/in/prasann-soni-b3a9682a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Prasann Soni</a></p>
+
+</div>
+
+</section>
+
+</div>
+
+
+
+<script>
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          // animate only once
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+
+  document.querySelectorAll(".fade-in-on-scroll").forEach((el) => {
+    observer.observe(el);
+  });
+</script>
+<!-- It is for icons -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  </body>
+</html>
